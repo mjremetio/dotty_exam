@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="container-header">
+            <div class="nav-content">
+                <nav class="nav-header">
+                    <ul class="nav-ul">
+                        <li>
+                            <img src="src/images/youtube_icon.png" alt="">
+                        </li>
+                        <li class="nav-li">
+                            <a href="#"> Background & Challenge</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#con-about">Solution</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#result">Results & Effectiveness</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#slideshow">Slideshow</a>
+                        </li>
+                        <li class="nav-li">
+                            <button class="btn-board-style"><i><img src="src/images/dl.png" alt="" style="margin-right:10px;"></i>Download Board</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-content">
+                <video autoplay muted loop id="myVideo">
+                    <source src="src/videos/bg.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <div class="video-btn">
+                    <button id="myBtn" onclick="myFunction()">Pause</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-about" id="con-about">
+            <div class="about-content">
+                <div class="about-left">
+                    <h3>
+                        THE
+                    </h3>
+                    <h1>
+                        WHIT SUNDAYS
+                    </h1>
+                    <h4>
+                        A MOVIE THAT'S WAITING TO BE WRITTEN
+                    </h4>
+                </div>
+                <div class="about-right">
+                    <div class="about-row">
+                        <div class="col">
+                            <h1> <strong>Background & <br>Audience</strong></h1><br>
+                            <p>
+                                Tourism & Events Queensland wanted to increase consideration of The Whitsundays amongst 'social fun seekers'; digitally savvy consumers that socialise substantially online.</p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="about-row">
+                        <div class="col">
+                            <h1> Problem</h1>
+                            <p>
+                                The Whitsundays was losing its cachet as an aspirational holiday location.</p><br>
+                        </div>
+                    </div>
+
+                    <div class="about-row">
+                        <div class="col">
+                            <h1>Objective</h1>
+                            <p>
+                                Shift perceptions and re-build the Whitsundays’ social currency as a world-class destination</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container-solution" id="result">
+            <div class="row-1-solution">
+                <h1> Solution</h1><br>
+                <div class="row-2-solution">
+                    <div class="col-left">
+                        <p>
+                            We knew movies rated high on the list of our target's interest and with incredible beaches, seaplanes, yachts and glamorous locations the Whitsundays the perfect setting for a movie.
+                        </p>
+                        <br>
+                        <p>
+                            So we invited Australians to write it.
+                        </p>
+                        <br>
+                        <h2>
+                            The Whitsundays.
+                        </h2>
+                        <br>
+                        <h2>
+                            A movie that's waiting to be written.
+                        </h2>
+                        <br>
+                        <p>
+                            We enlisted world-renowed screenwriter Craig Pearce as Script Supervisor. Then for 20 days we posted a daily sotry board image on Facebook and Instagram, inviting the public to write scenes for a chance to win a $10,000 luxury holiday.
+                        </p>
+                        <br>
+
+                    </div>
+                    <div class="col-right">
+
+                        <p>
+                            The campaign launched with a trailer, radio and online advertising.
+                        </p>
+                        <br>
+                        <p>
+                            We reacted to the storyline as it developed, selecting and treating images according to the previous winning scene.
+                        </p>
+                        <br>
+                        <p>
+                            Each scene written and shared became a compelling "ad" for the Whitsundays.
+
+                        </p>
+                        <br>
+                        <p>
+                            Together, a Hollywood screenwriter and the Australian public had created the world's first crowd-sourced movie storyboard and a story universe with millions of possible permutations.
+                        </p>
+                        <br>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-media" id="slideshow">
+            <div class="option-bars">
+                <ul>
+                    <li>
+                        <a href="#">Video</a>
+
+                    </li>
+                    <li>
+                        <a href="#">Photography</a>
+
+                    </li>
+                    <li>
+                        <a href="#">Social</a>
+
+                    </li>
+                    <li>
+                        <a href="#">PR</a>
+
+                    </li>
+                    <li>
+                        <a href="#">Radio</a>
+
+                    </li>
+                </ul>
+                <br>
+
+            </div>
+
+            <div class="media-content">
+                <div class="media-left">
+                    <div class="square-box">
+
+                    </div>
+
+                </div>
+
+
+                <div class="media-right">
+                    <p>
+                        Live Reads from NOVA presenters reflected the ever-evolving story of Jake in real time, and encouraged people to get involved to shape the story themselves.
+                    </p>
+                </div>
+            </div>
+            <div class="media-button">
+                <button class="btn-media">
+                    View Project
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+</body>
+
+</html>
